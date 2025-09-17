@@ -1,7 +1,7 @@
 1. play CDN -> Add script
 2. create tailwinf.config.js for hints
 
-Resource : [text](https://github.com/ProgrammingHero1/tea-house-resources)
+Resource : [Click](https://github.com/ProgrammingHero1/tea-house-resources)
 
 
 sizing,
