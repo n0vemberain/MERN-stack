@@ -11,3 +11,9 @@ container(its automatectically reshape the screen size)(it can also can be done 
 spaceing, 
 max-auto (to place the comtainer in the center),
 BraeakPoint -> @media 
+
+
+margin auto - mx-auto
+flex
+margin top bottom mb mt
+shadow
