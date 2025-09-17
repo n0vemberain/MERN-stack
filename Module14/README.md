@@ -17,3 +17,4 @@ margin auto - mx-auto
 flex
 margin top bottom mb mt
 shadow
+overflow hidden
