@@ -1,5 +1,5 @@
-Module 14 - Tea Landing page with Tailwind <br>
-Module 15 - Bike Zone with Daisy UI <br>
+Module 14 - Tea Landing page with Tailwind - project <br>
+Module 15 - Bike Zone with Daisy UI - project <br>
 Module 17 - Introduction to JavaScript <br>
 Module 18 - Fundamental Concepts of conditionals <br>
 Module 18.5 - Fundamental Concepts of Array [Part-1] <br>
