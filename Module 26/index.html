@@ -7,10 +7,50 @@
 </head>
 <body>
     <h1>DOM DOM DOM DOM</h1>
+    <!-- option 1 for event handler -->
     <button onclick="console.log(7)">Click me </button>
     <button onclick="console.log(63)">Another button </button>
     <button onclick="console.log('I am clicked')">Okay</button>
     <input type="text">
+    <br>
+
+    <!-- option 2 for click ecent handler -->
+    <button onclick="makeyellow()">Make yellow</button>
+    <button onclick="makeblue()">MakeBlue</button>
+
+    <br>
+
+    <!-- option 3  -->
+    <button id="btn-make-green">Make green</button>
+
+    <script>
+        const btnMakeGreen = document.getElementById('btn-make-green');
+        btnMakeGreen.onclick = function makeGreen(){
+            document.body.style.backgroundColor = 'green';
+        }
+
+    </script>
+
+
+<!-- option 4 addEventListener -->
+    <button id="btn-make-pink">Make Pink</button>
+    <script>
+        // getelementById.addEventListener('event', function)
+        const btnMakePink = document.getElementById('btn-make-pink').addEventListener('click',function makePink(){
+            document.body.style.backgroundColor = 'pink';
+        });
+    </script>
+
+    <script>
+        function makeyellow(){
+            document.body.style.backgroundColor = 'yellow';
+        }
+        function makeblue(){
+            document.body.style.backgroundColor = 'blue';
+        }
+    </script>
+
+
     <script src="js/events.js"></script>
 </body>
 </html>
