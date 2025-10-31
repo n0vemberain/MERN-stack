@@ -16,14 +16,29 @@
             font-weight: bold;
             color: purple;
         }
+        .fruits-container li{
+            padding: 10px;
+            border-radius: 5px;
+            width: 250px;
+        }
+        .okay{
+            background-color: lightgray;
+            margin: 5px 0;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: darkblue;
+
+        }
     </style>
 </head>
-<body>
+<body class="mainContainer">
     <header>
         <h1>Welcome to my DOM</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laudantium ducimus, impedit, ipsum velit, iure fugiat provident debitis a blanditiis repellendus sequi dignissimos cum deleniti? Saepe accusantium animi delectus laboriosam.</p>
     </header>
     <main>
+
        <section>
          <h1>My Awesome DOM de baba</h1>
         <ul>
@@ -33,7 +48,9 @@
             <li>Okay</li>
         </ul>
        </section>
-       <section>
+
+
+       <section id="places-container">
         <h1 id="places-title">Places I like to visit</h1>
         <ul>
             <li class="important-places">Switzerland</li>
@@ -43,7 +60,8 @@
         </ul>
        </section>
 
-       <section>
+
+       <section class="fruits-container">
         <h1 id="fruits-title">Fruits I like</h1>
         <ul>
             <li>Mango</li>
@@ -51,6 +69,34 @@
             <li>Apple</li>
             <li>Orange</li>
             <li>Banana</li>
+        </ul>
+       </section>
+
+       <section class="section-title">
+        <h1>section title-1</h1>
+        <ul>
+            <li>List item-1</li>
+            <li>List item-2</li>
+            <li>List item-3</li>
+            <li>List item-4</li>
+        </ul>
+       </section>
+       <section class="section-title">
+        <h1>section title-2</h1>
+        <ul>
+            <li>List item-1</li>
+            <li>List item-2</li>
+            <li>List item-3</li>
+            <li>List item-4</li>
+        </ul>
+       </section>
+       <section class="section-title">
+        <h1>section title-3</h1>
+        <ul>
+            <li>List item-1</li>
+            <li>List item-2</li>
+            <li>List item-3</li>
+            <li>List item-4</li>
         </ul>
        </section>
     </main>
@@ -68,13 +114,21 @@
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
         for (const li of liCollection){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
 
         const places = document.getElementsByClassName('important-places');
         for (const place of places){
-            console.log(place.innerText);
+            // console.log(place.innerText);
+        } 
+
+
+        // query selector ALL
+        const fruitItems = document.querySelectorAll('.fruits-container');
+        for(const fruit of fruitItems){
+            // console.log(fruit.innerText);
         }
+        // console.log(fruitItems);
 
     </script>
 </body>
