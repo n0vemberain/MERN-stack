@@ -1,0 +1,81 @@
+<html lang="en">
+    <!DOCTYPE html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        li{
+            color: cadetblue;
+        }
+        #fruits-title{
+            color: tomato;
+        }
+        .important-places{
+            font-weight: bold;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laudantium ducimus, impedit, ipsum velit, iure fugiat provident debitis a blanditiis repellendus sequi dignissimos cum deleniti? Saepe accusantium animi delectus laboriosam.</p>
+    </header>
+    <main>
+       <section>
+         <h1>My Awesome DOM de baba</h1>
+        <ul>
+            <li>Jalali set</li>
+            <li>Shafayet</li>
+            <li>bonobash</li>
+            <li>Okay</li>
+        </ul>
+       </section>
+       <section>
+        <h1 id="places-title">Places I like to visit</h1>
+        <ul>
+            <li class="important-places">Switzerland</li>
+            <li class="important-places">Italy</li>
+            <li class="important-places">Turkey</li>
+            <li>Spain</li>
+        </ul>
+       </section>
+
+       <section>
+        <h1 id="fruits-title">Fruits I like</h1>
+        <ul>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Banana</li>
+        </ul>
+       </section>
+    </main>
+    <script src="dom.js"></script>
+    <script>
+        // console.log("Hello from index.html");
+        // const student = {
+        //     name: "Fatin",
+        //     age: 22,
+        //     study : function (time){
+        //         console.log(`This student studies ${time} hours a day`);
+        //     }
+        // }
+
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for (const li of liCollection){
+            console.log(li.innerText);
+        }
+
+        const places = document.getElementsByClassName('important-places');
+        for (const place of places){
+            console.log(place.innerText);
+        }
+
+    </script>
+</body>
+</html>
