@@ -17,3 +17,6 @@ document.getElementById("btn").addEventListener("click", function(e){ <br>
   console.log(e.target); // element that triggered the event <br>
 });<br>
 </script><br>
+
+
+input field e inner text theke na . value thake. 

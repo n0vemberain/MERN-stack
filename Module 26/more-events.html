@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+
+    <button id="btn-mouse">Micky mouse minnie</button>
+    <input type="text" id="user-name" placeholder="enter your name">
+    <input type="text" id="user-email" placeholder="enter your email">
+    <br>
+    <br>
+
+
+    <h1>My secret Info</h1>
+    <input type="text" id="secret-info" placeholder="write delete here">
+    <button id="btn-dalete" disabled>Delete</button>
+
+    <script>
+        document.getElementById('secret-info').addEventListener('keyup', function(event){
+            console.log("user is typing", event.target.value);
+
+            const btnDelete = document.getElementById('btn-dalete');
+
+            if (event.target.value === 'delete'){
+                btnDelete.removeAttribute('disabled');
+            }else{
+                // console.log('delete not typed');
+                btnDelete.setAttribute('disabled', true);
+            }
+        });
+    </script>
+
+
+
+    <script>
+        // document.getElementById('btn-mouse').addEventListener('mouseenter', function(){
+        //     console.log('mouse enter event happened');  
+        // })
+
+        // document.getElementById('btn-mouse').addEventListener('mousemove', function(){
+        //     console.log('mouse enter event happened');  
+        // })
+
+        // document.getElementById('btn-mouse').addEventListener('mouseout', function(){
+        //     console.log('mouse enter event happened');  
+        // });
+
+        // document.getElementById('user-name').addEventListener('focus', function(){
+        //     console.log('name input field focused');
+        // });
+
+        // document.getElementById('user-email').addEventListener('focus', function(){
+        //     console.log('email input field focused');
+        // });
+
+        document.getElementById('user-email').addEventListener('keyup', function(){
+            console.log('Typing something in the email field',event.target.value);
+        });
+    </script>
+    
+</body>
+</html>
