@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="bg-slate-800">
@@ -75,9 +75,9 @@
                                 <label class="label">Account Number</label>
                                 <input id="account-number" value="01637713652" type="text" class="input" placeholder="type your number" required/>
                                 <label class="label">Amount</label>
-                                <input type="text" class="input" placeholder="Enter Amount" name="" id="amount" required>
+                                <input type="text" class="input" placeholder="Enter Amount" name="amount" id="amount" required>
                                 <label class="label">Pin</label>
-                                <input id="pin" value="123456" type="text" class="input" placeholder="type your pin" required />
+                                <input id="pin" value="123456" type="password" class="input" placeholder="type your pin" required />
                                 <div><a class="link link-hover">Forgot pin?</a></div>
                                 <button id="add-money" class="btn btn-neutral border-none mt-4 bg-green-700 hover:bg-green-600 text-white">Add Money</button>
                             </fieldset>
@@ -85,7 +85,7 @@
                     </div>
                 </section>
 
-                <section id="cash-out-section" class="mt-4 flex flex-col items-center hidden">
+                <section id="cash-out-section" class="mt-4  flex flex-col items-center hidden">
                     <h1 class="text-3xl font-bold flex items-center justify-center">Cash Out</h1>
                 </section>
 
