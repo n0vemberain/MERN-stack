@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-100">
+        <header>
+            <nav class="flex justify-around items-center">
+                <img class="w-11 " src="./payoo.png" alt="">
+                <div class="flex flex-col items-center">
+                    <h1 class="text-3xl font-black">$ 4500</h1>
+                    <p class="border rounded-md p-1 font-semibold">Available balance</p>
+                </div>
+                <button class="btn rounded-3xl">logout</button>
+            </nav>
+            <!-- <hr class="mt-6 mb-4"> -->
+            <section class="p-4">
+                <h1 class="text-2xl font-bold">Wlcome to PAYOO!</h1>
+                <p class="text-lg font-medium mb-4">Enjoy easy and convenient financial services with us. Cashout charge
+                    is low. </p>
+
+                <div class="cards grid grid-cols-3 gap-4">
+
+                    <div
+                        class="box border p-4 rounded-lg text-center hover:bg-gray-200 cursor-pointer hover:text-blue-500">
+                        <h1 class="text-3xl font-black">M</h1>
+                        <p>Add Money</p>
+                    </div>
+                    <div
+                        class="box border p-4 rounded-lg text-center hover:bg-gray-200 cursor-pointer hover:text-blue-500">
+                        <h1 class="text-3xl font-black">C</h1>
+                        <p>Cash Out</p>
+                    </div>
+                    <div
+                        class="box border p-4 rounded-lg text-center hover:bg-gray-200 cursor-pointer hover:text-blue-500">
+                        <h1 class="text-3xl font-black">T</h1>
+                        <p>Transfer Money</p>
+                    </div>
+                    <div
+                        class="box border p-4 rounded-lg text-center hover:bg-gray-200 cursor-pointer hover:text-blue-500">
+                        <h1 class="text-3xl font-black">G</h1>
+                        <p>Get Bonus</p>
+                    </div>
+                    <div
+                        class="box border p-4 rounded-lg text-center hover:bg-gray-200 cursor-pointer hover:text-blue-500">
+                        <h1 class="text-3xl font-black">G</h1>
+                        <p>Get Bill</p>
+                    </div>
+                    <div
+                        class="box border p-4 rounded-lg text-center hover:bg-gray-200 cursor-pointer hover:text-blue-500">
+                        <h1 class="text-3xl font-black">T</h1>
+                        <p>Transaction History</p>
+                    </div>
+                </div>
+
+                <section class="mt-4 flex flex-col items-center">
+                    <h2 class="flex items-start text-xl font-medium mb-2">Add Money</h2>
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <fieldset class="fieldset">
+                                <label class="label">Select Bank</label>
+                                <select class="select">
+                                    <option disabled selected>Pick a Bank</option>
+                                    <option value="BRACK">BRACK</option>
+                                    <option value="DBBL">DBBL</option>
+                                    <option value="ISLAMI">ISLAMI</option>
+                                </select>
+                                <label class="label">Account Number</label>
+                            <input id="account-number" value="01637713652" type="text" class="input" placeholder="type your number" required/>
+                            <label class="label">Pin</label>
+                            <input id="pin" value="123456" type="text" class="input" placeholder="type your pin" required />
+                            <div><a class="link link-hover">Forgot pin?</a></div>
+                                <button class="btn btn-neutral border-none mt-4 bg-green-700 hover:bg-green-600 text-white">Add Money</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </header>
+
+
+    </section>
+</body>
+
+</html>
