@@ -15,7 +15,7 @@
             <nav class="flex justify-around items-center">
                 <img class="w-11 " src="./payoo.png" alt="">
                 <div class="flex flex-col items-center">
-                    <h1 class="text-3xl font-black">$ 4500</h1>
+                    <h1 class="text-3xl font-black">$ <span id="main-balance">4500</span></h1>
                     <p class="border rounded-md p-1 font-semibold">Available balance</p>
                 </div>
                 <button class="btn rounded-3xl">logout</button>
@@ -28,12 +28,12 @@
 
                 <div class="cards grid grid-cols-3 gap-4">
 
-                    <div
+                    <div id="add-money-btn"
                         class="box border p-4 rounded-lg text-center hover:bg-gray-200 cursor-pointer hover:text-blue-500">
                         <h1 class="text-3xl font-black">M</h1>
                         <p>Add Money</p>
                     </div>
-                    <div
+                    <div id="cash-out-btn"
                         class="box border p-4 rounded-lg text-center hover:bg-gray-200 cursor-pointer hover:text-blue-500">
                         <h1 class="text-3xl font-black">C</h1>
                         <p>Cash Out</p>
@@ -60,8 +60,8 @@
                     </div>
                 </div>
 
-                <section class="mt-4 flex flex-col items-center">
-                    <h2 class="flex items-start text-xl font-medium mb-2">Add Money</h2>
+                <section id="add-money-section" class="mt-4 flex flex-col items-center hidden">
+                    <h2 class="flex items-start text-3xl font-bold mb-2">Add Money</h2>
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
                             <fieldset class="fieldset">
@@ -73,14 +73,20 @@
                                     <option value="ISLAMI">ISLAMI</option>
                                 </select>
                                 <label class="label">Account Number</label>
-                            <input id="account-number" value="01637713652" type="text" class="input" placeholder="type your number" required/>
-                            <label class="label">Pin</label>
-                            <input id="pin" value="123456" type="text" class="input" placeholder="type your pin" required />
-                            <div><a class="link link-hover">Forgot pin?</a></div>
-                                <button class="btn btn-neutral border-none mt-4 bg-green-700 hover:bg-green-600 text-white">Add Money</button>
+                                <input id="account-number" value="01637713652" type="text" class="input" placeholder="type your number" required/>
+                                <label class="label">Amount</label>
+                                <input type="text" class="input" placeholder="Enter Amount" name="" id="amount" required>
+                                <label class="label">Pin</label>
+                                <input id="pin" value="123456" type="text" class="input" placeholder="type your pin" required />
+                                <div><a class="link link-hover">Forgot pin?</a></div>
+                                <button id="add-money" class="btn btn-neutral border-none mt-4 bg-green-700 hover:bg-green-600 text-white">Add Money</button>
                             </fieldset>
                         </div>
                     </div>
+                </section>
+
+                <section id="cash-out-section" class="mt-4 flex flex-col items-center hidden">
+                    <h1 class="text-3xl font-bold flex items-center justify-center">Cash Out</h1>
                 </section>
 
             </section>
@@ -88,6 +94,7 @@
 
 
     </section>
+    <script src="./script/addmoney.js"></script>
 </body>
 
 </html>
