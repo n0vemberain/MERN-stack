@@ -12,5 +12,9 @@ Module 23 - JS Simple coding problem [Part-2] <br>
 Module 24.5 - Basic JS Bonus Module <br>
 Module 25 - Tour of DOM <br>
 Module 26 - Event, addEventListener, Event buble <br>
+<<<<<<< HEAD
 Module 27 - payoo
 Module 28 - payoo recap
+=======
+Module 27 - 
+>>>>>>> 6fa809e200698d121e3ee7dcf1096658b4ee07be
