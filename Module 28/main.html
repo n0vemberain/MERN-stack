@@ -14,7 +14,7 @@
         <nav class="flex justify-around items-center bg-lime-400 py-3">
             <img class="h-10" src="./payoo.png" alt="">
             <div class="flex flex-col items-center">
-                <p class="text-2xl font-bold">$ <span>4500</span></p>
+                <p class="text-2xl font-bold">$ <span id="main-balance">4500</span></p>
                 <p class="text-sm border p-3 rounded-xl hover:bg-white hover:text-lime-400">Available Balance</p>
             </div>
             <button class="btn">Log out</button>
@@ -68,19 +68,31 @@
         </section>
 
         <!-- Add Money -->
-         <section class="px-4">
+         <section id="add-money" class="add-money px-4 hidden">
             <h1 class="text-2xl font-bold text-center mb-2">Add money</h1>
-            <div class="grid grid-cols-4 gap-2">
-                <p id="50" value="50" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$50</p>
-                <p id="100" value="100" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$100</p>
-                <p id="200" vlaue="200" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$200</p>
-                <p id="250" value="250" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$250</p>
-                <p id="300" value="300" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$300</p>
-                <p id="350" value="350" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$350</p>
-                <p id="400" value="400" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$400</p>
-                <p id="450" vlaue="450" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$450</p>
-                
+            <div class="grid grid-cols-3 gap-2">
+                <p id="a50" value="50" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$50</p>
+                <p id="a100" value="100" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$100</p>
+                <p id="a250" value="250" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$250</p>
+                <p id="a300" value="300" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$300</p>
+                <p id="a350" value="350" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$350</p>
+
             </div>
+            <butto id="add-btn" class="btn flex mt-2 hover:bg-lime-300 rounded-xl">Add Money</button>
+         </section>
+
+         <!-- Cash Out -->
+         <section id="cash-out"  class="cash-out px-4 hidden">
+            <h1 class="text-2xl font-bold text-center mb-2">Cash Out</h1>
+            <div class="grid grid-cols-3 gap-2">
+                <p id="c50" value="50" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$50</p>
+                <p id="c100" value="100" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$100</p>
+                <p id="c250" value="250" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$250</p>
+                <p id="c300" value="300" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$300</p>
+                <p id="c350" value="350" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$350</p>
+                <p id="c400" value="400" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$400</p>
+            </div>
+            <butto id="cash-out" class="btn flex mt-2 hover:bg-lime-300 rounded-xl">Cash out</button>
          </section>
 
 
