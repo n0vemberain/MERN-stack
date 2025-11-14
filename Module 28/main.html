@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-cyan-700">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <nav class="flex justify-around items-center bg-lime-400 py-3">
+            <img class="h-10" src="./payoo.png" alt="">
+            <div class="flex flex-col items-center">
+                <p class="text-2xl font-bold">$ <span>4500</span></p>
+                <p class="text-sm border p-3 rounded-xl hover:bg-white hover:text-lime-400">Available Balance</p>
+            </div>
+            <button class="btn">Log out</button>
+        </nav>
+
+        <!-- cards -->
+        <section class="cards px-4 mb-4">
+            <h1 class="text-2xl font-bold mt-4">Wlcome to PAYOO!</h1>
+            <p class="text-lg font-medium mb-4">Enjoy easy and convenient financial services with us. Cashout charge
+                is low. </p>
+
+            <div class="grid grid-cols-3 gap-2">
+                <div id="add-money-btn"
+                    class="box text-center border p-4 rounded-xl cursor-pointer hover:text-blue-500">
+                    <h1 class="text-2xl font-bold">Money</h1>
+                    <p>Add money</p>
+                </div>
+
+                <div id="cash-out-btn"
+                    class="box text-center border p-4 rounded-xl cursor-pointer hover:text-blue-500">
+                    <h1 class="text-2xl font-bold">Cash</h1>
+                    <p>Cash out</p>
+                </div>
+
+                <div id="transfer-money-btn"
+                    class="box text-center border p-4 rounded-xl cursor-pointer hover:text-blue-500">
+                    <h1 class="text-2xl font-bold">Transfer</h1>
+                    <p>Transfer money</p>
+                </div>
+
+                <div id="get-bonus-btn"
+                    class="box text-center border p-4 rounded-xl cursor-pointer hover:text-blue-500">
+                    <h1 class="text-2xl font-bold">Get</h1>
+                    <p>Get bonous</p>
+                </div>
+
+                <div id="get-bill-btn"
+                    class="box text-center border p-4 rounded-xl cursor-pointer hover:text-blue-500">
+                    <h1 class="text-2xl font-bold">Get</h1>
+                    <p>Get bill</p>
+                </div>
+
+                <div id="transaction-history-btn"
+                    class="box text-center border p-4 rounded-xl cursor-pointer hover:text-blue-500">
+                    <h1 class="text-2xl font-bold">Transfer</h1>
+                    <p>Transfer history</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Add Money -->
+         <section class="px-4">
+            <h1 class="text-2xl font-bold text-center mb-2">Add money</h1>
+            <div class="grid grid-cols-4 gap-2">
+                <p id="50" value="50" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$50</p>
+                <p id="100" value="100" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$100</p>
+                <p id="200" vlaue="200" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$200</p>
+                <p id="250" value="250" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$250</p>
+                <p id="300" value="300" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$300</p>
+                <p id="350" value="350" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$350</p>
+                <p id="400" value="400" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$400</p>
+                <p id="450" vlaue="450" class="text-center border rounded-xl p-5 text-xl font-bold hover:bg-blue-300 hover:text-lime-300">$450</p>
+                
+            </div>
+         </section>
+
+
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
